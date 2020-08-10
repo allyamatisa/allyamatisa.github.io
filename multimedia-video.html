@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Allya Matisa • Design</title>
+    <meta name="description" content="Portfolio site of Malaysia-based visual designer, Allya Matisa" />
+    <meta name="keywords" content="allya matisa, allya mat isa, lsyamatisa, allyamatisa, front-end web developer, designer, malaysia, portfolio, illustration, graphic design, web design, 3D visualization, visual media" />
+    <meta name="author" content="Allya Matisa" />
+
+    <link rel="shortcun icon" type="image/png" href="img/am--logo.png">
+    <link rel="icon" type="image/png" href="img/am--favicon-192.png" sizes="192x192">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/am--favicon-180.png">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="pages.css" media="screen and (orientation: portrait)"/>
+
+    <!-- change font --><link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">
+	<!-- change font --><link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,600" rel="stylesheet">
+        
+</head>
+
+<body>
+<!-- PRELOADER -->
+<div class="spinner-wrapper">
+    <div class="spinner"></div>
+</div>
+
+<!-- NAVIGATION -->
+<a href="/index.html"><img src="img/am--logo.png" class="home--logo" width="100" height="100" /></a>	
+
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <br/>
+    <a href="/about.html">About</a>
+    <a href="/branding-liquidlab.html">Branding: Liquidlab</a>
+    <a href="/branding-monsterpig.html">Branding: Monsterpig</a>
+    <a href="/collaboration-cosmos.html">Collaboration: Cosmos</a>
+    <a href="/multimedia-video.html">Multimedia: Talk Talk Korea</a>
+    <a href="/projects-visual-exercise.html">Visual Exercises: '11-'19</a>
+    <a href="/web-moebius.html">Web Design Concepts</a>
+    <br/><br/>
+    <a href="http://instagram.com/alyran.kata">Instagram</a>
+    <a href="mailto:allyamatisa@gmail.com">Email</a>
+  </div>
+  
+  <span class="hamburger" style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776;</span>
+  
+  <script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "350px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+  </script>
+
+
+<!-- GRID LAYOUT -->
+<div class="grid grid--layout">
+    <div class="grid__item grid__item--mlt1"></div>
+    <div class="grid__item grid__item--mlt2"></div>
+	<div class="grid__item grid__item--mlt3"></div>
+	<div class="grid__item grid__item--mlt4"></div>
+    <div class="grid__item grid__item--mlt5"></div>
+    <div class="grid__item grid__item--mlt6"></div>
+	<div class="grid__item grid__item--mlt7"></div>
+	<div class="grid__item grid__item--mlt8"></div>
+    <p class="grid__item grid__item--mlt9 grid__item--text-mlt">Talk Talk Korea • Video © 2020 AM.</p>
+</div>
+
+<a href="https://youtu.be/ZLxV1S3XVaQ"><img src="img/am--video.png" class="video--button"/></a>
+
+</body>
+
+<!-- PRELOADER ITEMS -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+		<script>
+            $(document).ready(function() {
+                $(window).on("load", function() {
+                    preloaderFadeOutTime = 1000;
+                    function hidePreloader() {
+                        var preloader = $('.spinner-wrapper');
+                        preloader.fadeOut(preloaderFadeOutTime);
+                    }
+                hidePreloader();
+                });
+            });
+
+</script>
+
+</html>
